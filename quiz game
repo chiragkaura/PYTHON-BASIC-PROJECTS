@@ -1,0 +1,41 @@
+print("Wlecome to my computer Quiz!")
+
+playing=input('Do you want to play?\n')
+
+if playing.lower() !='yes':
+    quit()
+
+print("okay! Let's play :)")
+score=0
+
+answer=input("What does CPU Stand for?\n")
+if answer.lower()=="central processing unit":
+    print("Whooo!\tYour answer is Correct")
+    score+=1
+else:
+    print("Sorry! Wrong answer")
+
+answer=input("What does GPU Stand for?\n")
+if answer.lower()=="graphics processing unit":
+    print("Whooo!\tYour answer is Correct")
+    score+=1
+else:
+    print("Sorry! Wrong answer")
+
+answer=input("What does RAM Stand for?\n")
+if answer.lower()=="random access meomory":
+    print("Whooo!\tYour answer is Correct")
+    score+=1
+else:
+    print("Sorry! Wrong answer")
+
+answer=input("What does PSU Stand for?\n")
+if answer.lower()=="power supply":
+    print("Whooo!\tYour answer is Correct")
+    score+=1
+else:
+    print("Sorry! Wrong answer")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score/4)*100) + " %")
+
